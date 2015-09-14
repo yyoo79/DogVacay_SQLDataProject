@@ -1,0 +1,5 @@
+﻿CREATE TABLE [dbo].[Stay]
+(
+	[StayId] INT IDENTITY(1,1) NOT NULL PRIMARY KEY, 
+    [StayDays] SMALLINT NULL 
+)

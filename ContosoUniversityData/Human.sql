@@ -1,0 +1,5 @@
+﻿CREATE TABLE [dbo].[Human]
+(
+	[HumanId] INT	IDENTITY(1,1) NOT NULL PRIMARY KEY, 
+    [FirstName] NVARCHAR(50) NULL 
+)

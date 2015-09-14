@@ -1,0 +1,73 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Operations Version="1.0" xmlns="http://schemas.microsoft.com/sqlserver/dac/Serialization/2012/02">
+  <Operation Name="Rename Refactor" Key="13c9a7ab-000a-48c1-8702-e3a096d9164f" ChangeDateTime="09/11/2015 02:11:13">
+    <Property Name="ElementName" Value="[dbo].[Dog].[Id]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[dbo].[Dog]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="DogId" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="e2e45fc0-eaa3-4171-9263-9cc94d1b1d9d" ChangeDateTime="09/11/2015 02:11:17">
+    <Property Name="ElementName" Value="[dbo].[Dog].[Firstname]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[dbo].[Dog]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="FirstName" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="bda083ac-8962-4cfc-9850-0cd8f7ad87c0" ChangeDateTime="09/11/2015 02:11:20">
+    <Property Name="ElementName" Value="[dbo].[Dog].[Lastname]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[dbo].[Dog]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="LastName" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="e103209b-7b9e-4ebd-96d5-ddf181a6ec06" ChangeDateTime="09/11/2015 02:11:23">
+    <Property Name="ElementName" Value="[dbo].[Dog].[age]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[dbo].[Dog]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="Age" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="d9d64467-2cf1-458e-b878-7506be355751" ChangeDateTime="09/11/2015 02:30:32">
+    <Property Name="ElementName" Value="[dbo].[Human].[Id]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[dbo].[Human]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="HumanId" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="d7ed88d1-11ab-426c-b1fd-e2489973853e" ChangeDateTime="09/11/2015 02:37:54">
+    <Property Name="ElementName" Value="[dbo].[DogStay].[Id]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[dbo].[DogStay]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="DogStayId" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="5b406e49-5df7-48ef-a97c-bd563e7d7b7a" ChangeDateTime="09/11/2015 02:39:53">
+    <Property Name="ElementName" Value="[dbo].[Stay].[Id]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[dbo].[Stay]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="StayId" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="8342cd64-83be-4951-86b9-8c5112d3616c" ChangeDateTime="09/13/2015 13:00:21">
+    <Property Name="ElementName" Value="[dbo].[Stay_Dog].[Id]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[dbo].[Stay_Dog]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="Stay_DogId" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="b369c655-286b-45e7-a4b3-5e2dfadf7717" ChangeDateTime="09/13/2015 13:01:46">
+    <Property Name="ElementName" Value="[dbo].[Stay_Dog].[DogId]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[dbo].[Stay_Dog]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="StayId" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="4926049f-ed74-4fa0-95cf-799896216b75" ChangeDateTime="09/13/2015 13:01:50">
+    <Property Name="ElementName" Value="[dbo].[Stay_Dog].[StayId]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[dbo].[Stay_Dog]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="DogId" />
+  </Operation>
+</Operations>
