@@ -12,10 +12,10 @@ Post-Deployment Script Template
 
 MERGE INTO Human AS Target 
 USING (VALUES 
-        ('Jane'), 
-        ('LokiMom'), 
-        ('SpootieMom'),
-		('AngelMom')
+        ('Piri'), 
+        ('Loki'), 
+        ('Spootie'),
+		('Angel')
 ) 
 AS Source ([FirstName]) 
 ON Target.[FirstName] = Source.[FirstName] 
@@ -23,3 +23,43 @@ WHEN NOT MATCHED BY TARGET THEN
 INSERT ([FirstName]) 
 VALUES ([FirstName]);
 
+MERGE INTO Dog AS Target
+USING (VALUES
+		('Jane',1), 
+        ('LokiMom',2), 
+        ('SpootieMom',3),
+		('AngelMom',4)
+)
+AS Source (FirstName,HumanId1)
+ON Target.[FirstName] = Source.[FirstName] 
+WHEN NOT MATCHED BY TARGET THEN 
+INSERT (FirstName,HumanId1)
+VALUES (FirstName,HumanId1);
+
+MERGE INTO Stay AS Target
+USING (VALUES
+		(1), 
+		(2),
+        (3),
+        (4),
+		(5)
+)
+AS Source (StayDays)
+ON Target.StayDays = Source.StayDays 
+WHEN NOT MATCHED BY TARGET THEN 
+INSERT (StayDays)
+VALUES (StayDays);
+
+MERGE INTO Stay_Dog AS Target
+USING (VALUES
+		(1,1), 
+		(2,2),
+        (3,3),
+        (4,2),
+		(5,3)
+)
+AS Source (StayId, DogId)
+ON Target.StayId = Source.StayId 
+WHEN NOT MATCHED BY TARGET THEN 
+INSERT (StayId, DogId)
+VALUES (StayId, DogId);
