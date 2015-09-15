@@ -10,7 +10,7 @@ Post-Deployment Script Template
 --------------------------------------------------------------------------------------
 */
 
-MERGE INTO Human AS Target 
+MERGE INTO Dog AS Target 
 USING (VALUES 
         ('Piri'), 
         ('Loki'), 
@@ -23,7 +23,7 @@ WHEN NOT MATCHED BY TARGET THEN
 INSERT ([FirstName]) 
 VALUES ([FirstName]);
 
-MERGE INTO Dog AS Target
+MERGE INTO Human AS Target
 USING (VALUES
 		('Jane',1), 
         ('LokiMom',2), 
