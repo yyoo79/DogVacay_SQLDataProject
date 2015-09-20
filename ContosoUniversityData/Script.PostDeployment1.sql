@@ -25,16 +25,16 @@ VALUES ([FirstName]);
 
 MERGE INTO Human AS Target
 USING (VALUES
-		('Jane',1), 
-        ('LokiMom',2), 
-        ('SpootieMom',3),
-		('AngelMom',4)
+		('Jane'), 
+        ('LokiMom'), 
+        ('SpootieMom'),
+		('AngelMom')
 )
-AS Source (FirstName,HumanId1)
+AS Source (FirstName)
 ON Target.[FirstName] = Source.[FirstName] 
 WHEN NOT MATCHED BY TARGET THEN 
-INSERT (FirstName,HumanId1)
-VALUES (FirstName,HumanId1);
+INSERT (FirstName)
+VALUES (FirstName);
 
 MERGE INTO Stay AS Target
 USING (VALUES
